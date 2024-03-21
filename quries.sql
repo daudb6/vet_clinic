@@ -1,5 +1,5 @@
 -- Quries 
-SELECT * FROM animals WHERE RIGHT(name, 3) = 'mon';
+SELECT * FROM animals WHERE name like '%mon';
 SELECT * FROM animals WHERE date_of_birth between '2016-01-01' and '2019-12-31';
 SELECT * FROM animals WHERE neutered = true and escape_attempts<3;
 SELECT date_of_birth  FROM animals WHERE name in ('Agumon','Pikachu');
